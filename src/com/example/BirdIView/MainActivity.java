@@ -10,6 +10,6 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.beaks);
+        setContentView(R.layout.main);
     }
 }

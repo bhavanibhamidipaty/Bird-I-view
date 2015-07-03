@@ -3,8 +3,9 @@
           package="com.example.BirdIView"
           android:versionCode="1"
           android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="14"/>
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="15"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
+            android:theme="@android:style/Theme.Holo.Light">
         <activity android:name="MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -12,5 +13,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".Search" />
+        <activity android:name=".Search_2" />
+        <activity android:name=".Search_3" />
+        <activity android:name=".Search_4" />
+        <activity android:name=".Search_5" />
+        <activity android:name=".Report" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".History" />
+        <activity android:name=".Selected" />
     </application>
 </manifest>

@@ -5,21 +5,28 @@
               android:layout_height="match_parent">
 
     <Button
-            android:layout_width="wrap_content"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
-            android:layout_marginTop="139dp"/>
+            android:text="Register Yourself"
+            android:id="@+id/BtnReg"
+            android:layout_above="@+id/BtnSrch" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button2" android:layout_centerVertical="true" android:layout_alignLeft="@+id/button"/>
+            android:text="Search for Bird"
+            android:id="@+id/BtnSrch" android:layout_centerVertical="true" android:layout_alignRight="@+id/BtnReg"
+            android:layout_alignLeft="@+id/BtnReg"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button3"
-            android:layout_marginTop="43dp"
-            android:layout_below="@+id/button2" android:layout_alignLeft="@+id/button2"/>
+            android:text="Report Bird"
+            android:id="@+id/BtnRpt"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/BtnSrch" android:layout_alignRight="@+id/BtnSrch"
+            android:layout_alignLeft="@+id/BtnSrch"/>
+    <Button
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
+            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"/>
 </RelativeLayout>

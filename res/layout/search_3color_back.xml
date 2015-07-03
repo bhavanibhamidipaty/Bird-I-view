@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:progress="50" android:indeterminate="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Color of the Back"
+            android:id="@+id/textView4" android:layout_below="@+id/progressBar" android:layout_alignParentLeft="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:id="@+id/BtnNxt" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
+            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true" android:layout_below="@+id/textView4">
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_blue"
+                android:src="@drawable/color_blue"
+                android:layout_above="@+id/iB_red" android:layout_toRightOf="@+id/iB_brown"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_brown"
+                android:src="@drawable/color_brown"
+                android:layout_above="@+id/iB_orange" android:layout_alignLeft="@+id/iB_orange"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_green"
+                android:src="@drawable/color_green" android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/iB_yellow"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_orange" android:layout_below="@+id/iB_blue"
+                android:layout_centerHorizontal="true" android:src="@drawable/color_orange"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_yellow" android:layout_alignTop="@+id/iB_orange"
+                android:layout_toLeftOf="@+id/iB_orange" android:src="@drawable/color_yellow"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_grey"
+                android:src="#80808080"
+                android:layout_alignTop="@+id/iB_white" android:layout_toRightOf="@+id/iB_black"
+                android:layout_alignBottom="@+id/iB_black" android:layout_toLeftOf="@+id/iB_white"/>
+        <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:id="@+id/iB_white"
+                android:src="#ffffffff"
+                android:layout_below="@+id/iB_orange" android:layout_toRightOf="@+id/iB_orange"
+                android:layout_alignRight="@+id/iB_red"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_black"
+                android:src="#ff000000"
+                android:layout_alignTop="@+id/iB_white" android:layout_toLeftOf="@+id/iB_orange"
+                android:layout_alignBottom="@+id/iB_white" android:layout_alignLeft="@+id/iB_yellow"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iB_red" android:layout_below="@+id/iB_green"
+                android:layout_toRightOf="@+id/iB_orange" android:src="@drawable/color_red"
+                android:layout_alignRight="@+id/iB_blue"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:progress="16" android:indeterminate="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Move Slider to Pick Size of the Bird"
+            android:id="@+id/textView4" android:layout_below="@+id/progressBar" android:layout_alignParentLeft="true"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:src="@drawable/sizes"/>
+    <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar" android:layout_below="@+id/imageView" android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" android:indeterminate="false"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:id="@+id/BtnNxt" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt;"
+            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="toTest SeekBar"
+            android:id="@+id/test" android:layout_above="@+id/imageView" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79dp"/>
+</RelativeLayout>

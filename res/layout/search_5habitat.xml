@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent"
+                 android:layout_height="wrap_content" android:id="@+id/progressBar2" android:layout_alignParentTop="true"
+                 android:layout_alignParentLeft="true" android:indeterminate="false" android:progress="83"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge" android:text="Select Where You Found it"
+              android:id="@+id/textView9"
+              android:layout_below="@+id/progressBar2" android:layout_alignParentLeft="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Flight"
+            android:id="@+id/btHabFly"
+            android:background="@drawable/hab_flight" android:gravity="top|left" android:layout_below="@+id/textView9"
+            android:layout_alignParentLeft="true" android:layout_marginTop="36dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On the Ground"
+            android:id="@+id/btHabGrd" android:layout_alignTop="@+id/btHabFly"
+            android:background="@drawable/hab_ground" android:layout_alignBottom="@+id/btHabFly"
+            android:layout_toRightOf="@+id/textView9" android:gravity="top|left"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perched"
+            android:id="@+id/btHabPch"
+            android:layout_marginTop="69dp" android:background="@drawable/hab_perch" android:gravity="top|left"
+            android:layout_below="@+id/btHabFly" android:layout_alignRight="@+id/btHabFly"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swimming"
+            android:id="@+id/btHabSwim" android:layout_alignTop="@+id/btHabPch" android:layout_alignLeft="@+id/btHabGrd"
+            android:gravity="top|left" android:background="@drawable/hab_swim" android:layout_alignBottom="@+id/btHabPch"
+            android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:id="@+id/BtnNxt" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
+            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:indeterminate="false" android:progress="66"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Select Type and Size of Beak"
+            android:id="@+id/textView4" android:layout_below="@+id/progressBar" android:layout_alignParentLeft="true"/>
+
+    <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" android:layout_alignRight="@+id/BtnNxt" android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true">
+        <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_1" android:background="@drawable/beaks_1"
+                            android:checked="false"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_2" android:background="@drawable/beaks_2"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_3" android:background="@drawable/beaks_3"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_4" android:background="@drawable/beaks_4"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_5" android:background="@drawable/beaks_5"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_6" android:background="@drawable/beaks_6"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rB_7" android:background="@drawable/beaks_7"/>
+                </RadioGroup>
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:id="@+id/BtnNxt" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
+            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Report your finding"
+            android:id="@+id/textView5"
+            android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date found:"
+            android:id="@+id/textView6"
+            android:layout_marginTop="96dp" android:layout_below="@+id/textView5" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/textDate"
+            android:layout_below="@+id/textView6" android:layout_toRightOf="@+id/textView7" android:editable="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Where found:"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textDate" android:layout_alignLeft="@+id/textView6"
+            android:layout_marginTop="41dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/textLoc"
+            android:enabled="false"
+            android:layout_below="@+id/textView7" android:layout_toRightOf="@+id/textView7"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report"
+            android:id="@+id/BtnReportSubmit"
+            android:layout_alignParentBottom="true" android:layout_alignRight="@+id/textLoc"
+            android:layout_marginBottom="45dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Comments:"
+                android:id="@+id/textView8"
+                android:layout_centerVertical="true" android:layout_alignLeft="@+id/textView7"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/textComment"
+                android:layout_below="@+id/textView8" android:layout_alignLeft="@+id/textLoc"/>
+</RelativeLayout>

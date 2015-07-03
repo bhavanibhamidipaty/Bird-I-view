@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.widget.TextView;
 
 
 public class Search extends Activity{
@@ -31,6 +34,33 @@ public class Search extends Activity{
             }
         });
 
+        SeekBar sizeSeek = (SeekBar) findViewById(R.id.seekBar);
+        TextView test = (TextView) findViewById(R.id.test);
+
+        sizeSeek.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
+            int p=0;
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                if(p<30)
+                {
+                    p=30;
+                    sizeSeek.setProgress(p);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress,boolean fromUser) {
+            
+                p=progress;
+                test.setTextSize(p);
+            }
+        });
 
     }
 

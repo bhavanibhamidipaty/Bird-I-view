@@ -47,7 +47,8 @@
             android:text="Report"
             android:id="@+id/BtnReportSubmit"
             android:layout_alignParentBottom="true" android:layout_alignRight="@+id/textLoc"
-            android:layout_marginBottom="45dp"/>
+            android:layout_marginBottom="45dp" android:background="@drawable/button_resize"
+            android:layout_toRightOf="@+id/textView5"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,5 +62,5 @@
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/textComment"
-                android:layout_below="@+id/textView8" android:layout_alignLeft="@+id/textLoc"/>
+                android:layout_below="@+id/textView8" android:layout_alignLeft="@+id/textLoc" android:autoText="false"/>
 </RelativeLayout>

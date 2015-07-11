@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.example.BirdIView"
           android:versionCode="1"
           android:versionName="1.0">
+    <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="15"/>
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
-            android:theme="@android:style/Theme.Holo.Light">
+            android:theme="@android:style/Theme.Holo.Light"
+            android:allowBackup="true">
         <activity android:name="MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -14,7 +21,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Search" />
+        <activity
+                android:name=".Search">
+                <intent-filter>
+                        <action android:name="com.example.BirdIView"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                </intent-filter>
+        </activity>
+        <activity android:name=".BirdFilter" />
+        <activity android:name=".Extra.Hist" />
+        <activity android:name=".History" />
+        <activity android:name=".Extra.ListBirdsActivity" />
+        <activity android:name=".Extra.ListHistActivity" />
         <activity android:name=".Search_2" />
         <activity android:name=".Search_3" />
         <activity android:name=".Search_4" />
@@ -22,7 +40,7 @@
         <activity android:name=".Report" />
         <activity android:name=".Register" />
         <activity android:name=".MainMenu" />
-        <activity android:name=".History" />
-        <activity android:name=".Selected" />
+        <activity android:name=".Extra.Search_Tabs"/>
+        <activity android:name=".StoringInput"/>
     </application>
 </manifest>

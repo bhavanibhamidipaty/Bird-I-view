@@ -37,5 +37,13 @@ public class MainMenu extends Activity {
                 startActivity(new Intent(MainMenu.this, Report.class));
             }
         });
+
+        Button bBack = (Button) findViewById(R.id.BtnBack);
+        bBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainMenu.this, MainActivity.class));
+            }
+        });
     }
 }

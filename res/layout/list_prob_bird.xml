@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Name of the Bird"
+            android:id="@+id/txt_NameBird" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:textStyle="bold"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/img_Bird" android:layout_below="@+id/txt_NameBird"
+            android:layout_alignParentLeft="true" android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="See More..."
+            android:id="@+id/BtnInfo" android:layout_below="@+id/img_Bird" android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/txt_NameBird" android:background="@drawable/button_resize"
+            android:textSize="22dp"/>
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/BtnCall"
+            android:background="@drawable/play"
+            android:layout_below="@+id/img_Bird" android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/BtnInfo"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bird\nCall"
+            android:id="@+id/textView10"
+            android:lines="2"
+            android:layout_below="@+id/img_Bird" android:layout_toLeftOf="@+id/BtnCall"
+            android:layout_alignBottom="@+id/BtnCall" android:textColor="@android:color/darker_gray"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is My Bird !!"
+            android:id="@+id/BtnSelectThis"
+            android:background="@drawable/button_resize"
+            android:layout_below="@+id/img_Bird" android:layout_alignParentRight="true"/>
+</RelativeLayout>

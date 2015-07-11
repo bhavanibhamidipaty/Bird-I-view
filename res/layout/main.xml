@@ -10,13 +10,13 @@
             android:text="Register Yourself"
             android:id="@+id/BtnReg"
             android:layout_above="@+id/BtnSrch" android:layout_centerHorizontal="true"
-            android:layout_marginBottom="47dp"/>
+            android:layout_marginBottom="47dp" android:background="@drawable/button_resize"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search for Bird"
             android:id="@+id/BtnSrch" android:layout_centerVertical="true" android:layout_alignRight="@+id/BtnReg"
-            android:layout_alignLeft="@+id/BtnReg"/>
+            android:layout_alignLeft="@+id/BtnReg" android:background="@drawable/button_resize"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
             android:id="@+id/BtnRpt"
             android:layout_marginTop="45dp"
             android:layout_below="@+id/BtnSrch" android:layout_alignRight="@+id/BtnSrch"
-            android:layout_alignLeft="@+id/BtnSrch"/>
+            android:layout_alignLeft="@+id/BtnSrch" android:background="@drawable/button_resize"/>
     <Button
             android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
             android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"

@@ -4,4 +4,33 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your History"
+            android:id="@+id/textView11" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_hist" android:layout_below="@+id/textView11" android:layout_alignParentLeft="true"/>
+    <TextView
+            android:id="@+id/txt_empty_list_hist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="No history yet. Add a bird"
+            android:textAppearance="?android:attr/textAppearance"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone" />
+    <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="+"
+            android:id="@+id/BtnAdd"
+            android:background="@drawable/button_resize" android:layout_alignTop="@+id/txt_empty_list_hist"
+            android:layout_alignRight="@+id/txt_empty_list_hist" android:layout_marginRight="109dp"
+            android:visibility="gone" />
 </RelativeLayout>

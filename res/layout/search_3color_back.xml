@@ -31,55 +31,55 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_blue"
                 android:src="@drawable/color_blue"
-                android:layout_above="@+id/iB_red" android:layout_toRightOf="@+id/iB_brown"/>
+                android:layout_above="@+id/iB_red" android:layout_toRightOf="@+id/iB_brown" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_brown"
                 android:src="@drawable/color_brown"
-                android:layout_above="@+id/iB_orange" android:layout_alignLeft="@+id/iB_orange"/>
+                android:layout_above="@+id/iB_orange" android:layout_alignLeft="@+id/iB_orange" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_green"
                 android:src="@drawable/color_green" android:layout_alignParentTop="true"
-                android:layout_alignLeft="@+id/iB_yellow"/>
+                android:layout_alignLeft="@+id/iB_yellow" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_orange" android:layout_below="@+id/iB_blue"
-                android:layout_centerHorizontal="true" android:src="@drawable/color_orange"/>
+                android:layout_centerHorizontal="true" android:src="@drawable/color_orange" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_yellow" android:layout_alignTop="@+id/iB_orange"
-                android:layout_toLeftOf="@+id/iB_orange" android:src="@drawable/color_yellow"/>
+                android:layout_toLeftOf="@+id/iB_orange" android:src="@drawable/color_yellow" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_grey"
                 android:src="#80808080"
                 android:layout_alignTop="@+id/iB_white" android:layout_toRightOf="@+id/iB_black"
-                android:layout_alignBottom="@+id/iB_black" android:layout_toLeftOf="@+id/iB_white"/>
+                android:layout_alignBottom="@+id/iB_black" android:layout_toLeftOf="@+id/iB_white" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="100dp"
                 android:layout_height="90dp"
                 android:id="@+id/iB_white"
                 android:src="#ffffffff"
                 android:layout_below="@+id/iB_orange" android:layout_toRightOf="@+id/iB_orange"
-                android:layout_alignRight="@+id/iB_red"/>
+                android:layout_alignRight="@+id/iB_red" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_black"
                 android:src="#ff000000"
                 android:layout_alignTop="@+id/iB_white" android:layout_toLeftOf="@+id/iB_orange"
-                android:layout_alignBottom="@+id/iB_white" android:layout_alignLeft="@+id/iB_yellow"/>
+                android:layout_alignBottom="@+id/iB_white" android:layout_alignLeft="@+id/iB_yellow" android:onClick="buttonOnClick"/>
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/iB_red" android:layout_below="@+id/iB_green"
                 android:layout_toRightOf="@+id/iB_orange" android:src="@drawable/color_red"
-                android:layout_alignRight="@+id/iB_blue"/>
+                android:layout_alignRight="@+id/iB_blue" android:onClick="buttonOnClick"/>
     </RelativeLayout>
 </RelativeLayout>

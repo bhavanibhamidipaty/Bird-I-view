@@ -1,0 +1,88 @@
+[33mcommit 8354489140bb7086ac65163e7497d98eae692611[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Fri Jul 3 14:25:09 2015 +0530
+
+    git commit
+
+[33mcommit 68ec9ed957d75a133ccf2847b2e8c0238d6c876c[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Fri Jul 3 12:48:56 2015 +0530
+
+    git commit
+
+[33mcommit 19ab7f6cf60fd7aaa36294d148a589b870d7bbea[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 18:00:10 2015 +0530
+
+    git push
+
+[33mcommit f8458e0660a4cbd31c50f9505b0e347971d09cde[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:59:36 2015 +0530
+
+    git commit
+
+[33mcommit 5a3f055784749523e68c66ba5e56b37a2b6434bb[m
+Merge: 93a5022 6fa29ba
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:54:18 2015 +0530
+
+    Merge branch 'master' of https://github.com/bhavanibhamidipaty/Bird-I-view
+
+[33mcommit 93a50227c38c541a01ce139229a0fe6a8cb85ab4[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:53:37 2015 +0530
+
+    git pull
+
+[33mcommit 6fa29ba068b1fe6e4422f57bd7cb6f1fb426de61[m
+Merge: 3cafeaa 48716b0
+Author: Bhavani Bhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:43:16 2015 +0530
+
+    Merge pull request #2 from bhavanibhamidipaty/madhulikaa07-master
+    
+    Madhulikaa07 master
+
+[33mcommit 3cafeaa998c6738cfb111465bdeb57cba4966bb8[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:38:52 2015 +0530
+
+    Merge branch 'master' of git://github.com/madhulikaa07/Bird-I-view into madhulikaa07-master
+    
+    Conflicts:
+    	res/layout/beaks.xml
+
+[33mcommit 48716b06b64a938334e0165b0f563629389af0c7[m
+Merge: c40347f 967e192
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:33:32 2015 +0530
+
+    Merge branch 'master' of git://github.com/madhulikaa07/Bird-I-view into madhulikaa07-master
+    
+    Conflicts:
+    	res/layout/beaks.xml
+
+[33mcommit 967e192b309e62c4d0c998373d781337491bb92f[m
+Author: Madhulika Dolke <madhulikaa07@gmail.com>
+Date:   Wed Jun 24 17:04:45 2015 +0530
+
+    MainScreen
+
+[33mcommit c40347f317f1f9c932e93a2ad7632b3fa30f4284[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 17:03:24 2015 +0530
+
+    Beaks
+
+[33mcommit 7931eb7fbc4452882fea8b534d5adc486be10ff2[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 16:45:45 2015 +0530
+
+    Commit message
+
+[33mcommit 5db1a980012ac4a75b2e0097281d00cbc8d02462[m
+Author: bhavanibhamidipaty <bhavanibhamidipaty@gmail.com>
+Date:   Wed Jun 24 16:18:59 2015 +0530
+
+    First commit

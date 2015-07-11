@@ -12,8 +12,15 @@
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
             android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"
             android:layout_alignParentLeft="true"/>
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Can&apos;t find your bird?"
-            android:id="@+id/BtnReport" android:layout_above="@+id/BtnBack" android:layout_centerHorizontal="true"
-            android:singleLine="false"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not your bird ?"
+            android:id="@+id/BtnReport"
+            android:singleLine="false" android:background="@drawable/button_resize"
+            android:dividerHeight="0.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="6dp" android:layout_alignTop="@+id/BtnBack"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@android:id/list" android:layout_above="@+id/BtnBack" android:layout_below="@+id/textView9"/>
 
 </RelativeLayout>

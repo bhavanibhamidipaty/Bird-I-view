@@ -28,11 +28,7 @@
                         <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
         </activity>
-        <activity android:name=".BirdFilter" />
-        <activity android:name=".Extra.Hist" />
         <activity android:name=".History" />
-        <activity android:name=".Extra.ListBirdsActivity" />
-        <activity android:name=".Extra.ListHistActivity" />
         <activity android:name=".Search_2" />
         <activity android:name=".Search_3" />
         <activity android:name=".Search_4" />
@@ -40,7 +36,6 @@
         <activity android:name=".Report" />
         <activity android:name=".Register" />
         <activity android:name=".MainMenu" />
-        <activity android:name=".Extra.Search_Tabs"/>
         <activity android:name=".StoringInput"/>
     </application>
 </manifest>

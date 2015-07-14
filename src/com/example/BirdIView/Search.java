@@ -1,3 +1,12 @@
+/** Description of Search Class
+ *
+ * Here the first screen of the search process is shown to user and input is recorded via scrollbar change
+ */
+
+
+
+
+
 package com.example.BirdIView;
 
 import android.app.Activity;
@@ -29,14 +38,6 @@ public class Search extends Activity{
         int seekMax = 10;
         sizeSeek.setMax(seekMax);
 
-        Button bBack = (Button) findViewById(R.id.BtnBack);
-        bBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Search.this, MainMenu.class));
-            }
-        });
-
         Button bNext = (Button) findViewById(R.id.BtnNxt);
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +60,7 @@ public class Search extends Activity{
                 test.setText(String.valueOf(progress));
                 SharedPreferences sizeP = getSharedPreferences("sizeV", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sizeP.edit();
-                editor.putString("sizeV", String.valueOf(progress));
+                editor.putInt("sizeV", progress);
                 editor.commit();
             }
         });

@@ -29,13 +29,5 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, MainMenu.class));
             }
         });
-
-        Button hist = (Button) findViewById(R.id.BtnHistory);
-        hist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, History.class));
-            }
-        });
     }
 }

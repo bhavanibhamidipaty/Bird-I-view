@@ -1,3 +1,9 @@
+/** Description of Search_5 Class
+ *
+ * Here the fifth screen of the search process is shown to user and input is recorded via button press
+ * A second different button press replaces the first
+ */
+
 package com.example.BirdIView;
 
 import android.app.Activity;
@@ -7,6 +13,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * Created by Bhavani on 02-07-2015.
@@ -17,15 +24,6 @@ public class Search_5 extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_5habitat);
-
-
-        Button bBack = (Button) findViewById(R.id.BtnBack);
-        bBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Search_5.this, Search_4.class));
-            }
-        });
 
         Button bNext = (Button) findViewById(R.id.BtnNxt);
         bNext.setOnClickListener(new View.OnClickListener() {
@@ -42,8 +40,9 @@ public class Search_5 extends Activity {
             public void onClick(View view2){
                 SharedPreferences habP = getSharedPreferences("habiB", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = habP.edit();
-                editor.putString("habiB", String.valueOf(1));
+                editor.putInt("habiB", 1);
                 editor.commit();
+                Toast.makeText(view2.getContext(), "In Flight Selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -53,8 +52,9 @@ public class Search_5 extends Activity {
             public void onClick(View view2){
                 SharedPreferences habP = getSharedPreferences("habiB", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = habP.edit();
-                editor.putString("habiB", String.valueOf(2));
+                editor.putInt("habiB", 2);
                 editor.commit();
+                Toast.makeText(view2.getContext(), "On the Ground Selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -64,8 +64,9 @@ public class Search_5 extends Activity {
             public void onClick(View view2){
                 SharedPreferences habP = getSharedPreferences("habiB", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = habP.edit();
-                editor.putString("habiB", String.valueOf(3));
+                editor.putInt("habiB", 3);
                 editor.commit();
+                Toast.makeText(view2.getContext(), "Perched Selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -75,8 +76,9 @@ public class Search_5 extends Activity {
             public void onClick(View view2){
                 SharedPreferences habP = getSharedPreferences("habiB", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = habP.edit();
-                editor.putString("habiB", String.valueOf(4));
+                editor.putInt("habiB", 4);
                 editor.commit();
+                Toast.makeText(view2.getContext(), "Swimming or Wadding Selected", Toast.LENGTH_LONG).show();
             }
         });
 

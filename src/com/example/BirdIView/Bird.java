@@ -1,6 +1,12 @@
+/** Description of Bird Class
+ *
+ * Contains the "pseudo" data access object (DAO)
+ *
+ */
+
+
 package com.example.BirdIView;
 
-// this file is StoringValues
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,41 +18,33 @@ import java.io.Serializable;
 /**
  * Created by Bhavani on 03-07-2015.
  */
-public class Bird extends Activity implements Serializable{
+public class Bird {
 
-        private Integer id;
-        private String name;
-        private String beak;
-        private String colorB;
-        private String colorC;
-        private String size;
-        private String habitat;
+    private int call;
+    private String name;
+    private int pic;
 
-    public Bird(){}
-
-    public Bird(String name, String beak, String colorB, String colorC, String size, String habitat){
-        this.name = name;
-        this.beak = beak;
-        this.colorB = colorB;
-        this.colorC = colorC;
-        this.size = size;
-        this.habitat = habitat;
+    public Bird(int call, String name, int pic) {
+        super();
+        this.setCall(call);
+        this.setName(name);
+        this.setPic(pic);
     }
 
-    public String getHabitat() {
-        return habitat;
+    public int getCall() {
+        return call;
     }
 
-    public void setHabitat(String habitat) {
-        this.habitat = habitat;
+    public void setCall(int call) {
+        this.call = call;
     }
 
-    public Integer getId() {
-        return id;
+    public int getPic() {
+        return pic;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setPic(int pic) {
+        this.pic = pic;
     }
 
     public String getName() {
@@ -57,37 +55,10 @@ public class Bird extends Activity implements Serializable{
         this.name = name;
     }
 
-    public String getBeak() {
-        return beak;
-    }
 
-    public void setBeak(String beak) {
-        this.beak = beak;
-    }
 
-    public String getColorB() {
-        return colorB;
-    }
 
-    public void setColorB(String colorB) {
-        this.colorB = colorB;
-    }
 
-    public String getColorC() {
-        return colorC;
-    }
-
-    public void setColorC(String colorC) {
-        this.colorC = colorC;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
 
 
 

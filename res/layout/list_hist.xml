@@ -7,26 +7,26 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Name of the Bird"
-            android:id="@+id/txt_NameBird" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:id="@+id/list_txt_NameBird" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
             android:textStyle="bold"/>
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="200dp"
-            android:id="@+id/img_Bird" android:layout_below="@+id/txt_NameBird"
+            android:id="@+id/list_img_Bird" android:layout_below="@+id/list_txt_NameBird"
             android:layout_alignParentLeft="true" android:layout_alignParentRight="true"/>
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="See More..."
-            android:id="@+id/BtnInfo" android:layout_below="@+id/img_Bird" android:layout_alignParentLeft="true"
-            android:layout_alignRight="@+id/txt_NameBird" android:background="@drawable/button_resize"
-            android:textSize="22dp"/>
+            android:id="@+id/BtnInfo" android:layout_below="@+id/list_img_Bird" android:layout_alignParentLeft="true"
+            android:background="@drawable/button_resize"
+            android:textSize="22dp" android:layout_toLeftOf="@+id/textView10"/>
     <Button
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:id="@+id/BtnCall"
+            android:id="@+id/list_BtnCall"
             android:background="@drawable/play"
-            android:layout_below="@+id/img_Bird" android:layout_centerHorizontal="true"
+            android:layout_below="@+id/list_img_Bird" android:layout_centerHorizontal="true"
             android:layout_alignBottom="@+id/BtnInfo"/>
     <TextView
             android:layout_width="wrap_content"
@@ -36,13 +36,13 @@
             android:id="@+id/textView10"
             android:lines="2"
             android:textColor="@android:color/darker_gray"
-            android:layout_below="@+id/img_Bird" android:layout_toLeftOf="@+id/BtnCall"/>
+            android:layout_below="@+id/list_img_Bird" android:layout_toLeftOf="@+id/list_BtnCall"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Your Tags"
             android:id="@+id/BtnTag"
             android:background="@drawable/button_resize"
-            android:layout_below="@+id/img_Bird" android:layout_alignParentRight="true"/>
+            android:layout_below="@+id/list_img_Bird" android:layout_alignParentRight="true"/>
 
 </RelativeLayout>

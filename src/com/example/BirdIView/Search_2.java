@@ -1,35 +1,43 @@
+/** Description of Search_2 Class
+ *
+ * Here the second screen of the search process is shown to user and input is recorded via button press
+ * A second different button press replaces the first
+ */
+
+
+
 package com.example.BirdIView;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 public class Search_2 extends Activity {
+
+    int[] state = {0,0,0,0,0,0,0,0,0};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.search_2color_chest);
 
-        Button bBack = (Button) findViewById(R.id.BtnBack);
-        bBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Search_2.this, Search.class));
-            }
-        });
+
+
 
         Button bNext = (Button) findViewById(R.id.BtnNxt);
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Search_2.this, Search_3.class);
+                Intent intent = new Intent(Search_2.this, Search_4.class);
                 startActivity(intent);
             }
         });
@@ -40,8 +48,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "7");
+                editor.putInt("colorC", 7);
                 editor.commit();
+                Toast.makeText(view.getContext(), "Blue Selected", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -51,8 +60,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "2");
+                editor.putInt("colorC", 2);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Brown Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -62,8 +72,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "5");
+                editor.putInt("colorC", 5);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Green Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -73,8 +84,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "8");
+                editor.putInt("colorC", 8);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Orange Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -84,8 +96,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "9");
+                editor.putInt("colorC", 9);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Yellow Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -95,8 +108,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "4");
+                editor.putInt("colorC", 4);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Grey Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -106,8 +120,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "3");
+                editor.putInt("colorC", 3);
                 editor.commit();
+                Toast.makeText(view.getContext(),"White Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -117,8 +132,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "1");
+                editor.putInt("colorC", 1);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Black Selected" , Toast.LENGTH_LONG).show();
             }
         });
 
@@ -128,8 +144,9 @@ public class Search_2 extends Activity {
             public void onClick(View view) {
                 SharedPreferences colorCP = getSharedPreferences("colorC", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = colorCP.edit();
-                editor.putString("colorC", "6");
+                editor.putInt("colorC", 6);
                 editor.commit();
+                Toast.makeText(view.getContext(),"Red Selected" , Toast.LENGTH_LONG).show();
             }
         });
     }

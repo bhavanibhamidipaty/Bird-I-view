@@ -1,3 +1,9 @@
+/** Description of Search_4 Class
+ *
+ * Here the third screen of the search process is shown to user and input is recorded via radio button press
+ * A second different button press replaces the first
+ */
+
 package com.example.BirdIView;
 
 import android.app.Activity;
@@ -28,19 +34,11 @@ public class Search_4 extends Activity {
         r6 = (RadioButton) findViewById(R.id.rB_6);
         r7 = (RadioButton) findViewById(R.id.rB_7);
 
-        Button bBack = (Button) findViewById(R.id.BtnBack);
-        bBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Search_4.this, Search_3.class));
-            }
-        });
-
         Button bNext = (Button) findViewById(R.id.BtnNxt);
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view2) {
-                Intent intent = new Intent(Search_4.this,Search_5.class);
+                Intent intent = new Intent(Search_4.this,Search_3.class);
                 startActivity(intent);
             }
         });
@@ -67,7 +65,7 @@ public class Search_4 extends Activity {
                 RadioButton r_button = (RadioButton) findViewById(checked_id);
                 SharedPreferences beakP = getSharedPreferences("beakR", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = beakP.edit();
-                editor.putString("beakR", String.valueOf(c));//r_button.getText().toString()
+                editor.putInt("beakR", c);//r_button.getText().toString()
                 editor.commit();
             }
 

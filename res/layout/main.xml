@@ -22,11 +22,18 @@
             android:layout_height="wrap_content"
             android:text="Report Bird"
             android:id="@+id/BtnRpt"
+            android:background="@drawable/button_resize"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:visibility="gone"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:id="@+id/BtnHistory"
+            android:background="@drawable/button_resize"
+            android:textColor="#ff000000"
             android:layout_marginTop="45dp"
             android:layout_below="@+id/BtnSrch" android:layout_alignRight="@+id/BtnSrch"
-            android:layout_alignLeft="@+id/BtnSrch" android:background="@drawable/button_resize"/>
-    <Button
-            android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
-            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"
-            android:layout_alignParentLeft="true"/>
+            android:layout_alignLeft="@+id/BtnSrch" />
 </RelativeLayout>

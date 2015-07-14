@@ -9,18 +9,32 @@
               android:textAppearance="?android:attr/textAppearanceLarge" android:text="Your bird might be:"
               android:id="@+id/textView9"
               android:layout_below="@+id/progressBar2" android:layout_alignParentLeft="true"/>
-    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="&lt;"
-            android:id="@+id/BtnBack" android:layout_alignParentBottom="true" android:layout_alignParentRight="false"
-            android:layout_alignParentLeft="true"/>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Not your bird ?"
             android:id="@+id/BtnReport"
             android:singleLine="false" android:background="@drawable/button_resize"
             android:dividerHeight="0.5dp"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="6dp" android:layout_alignTop="@+id/BtnBack"/>
-    <ListView
+            android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/list_birds"/>
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@android:id/list" android:layout_above="@+id/BtnBack" android:layout_below="@+id/textView9"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="txt"
+            android:id="@+id/txtInfo"
+            android:layout_alignParentRight="true" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView9" android:lines="50" android:visibility="gone"/>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:visibility="visible"
+        android:id="@+id/list_birds"
+         android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/textView9" android:layout_above="@+id/BtnReport" android:smoothScrollbar="true"
+        android:layout_margin="4dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again?"
+            android:id="@+id/BtnReturn" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:background="@drawable/button_resize"/>
 
 </RelativeLayout>
